@@ -3,7 +3,7 @@
 // icon-color: deep-green; icon-glyph: flag;
 /* -----------------------------------------------
 All the functions used in this widget were taken from "ig-lastest-post" 
-so all the credit goes to @supermamonalso thanks
+so all the credit goes to @supermamon also thanks
 to @supermamon, his work was my inspiration for making this script
 ----------------------------------------------  
 Script      : randomFlag.js

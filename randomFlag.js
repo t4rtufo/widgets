@@ -2,16 +2,14 @@
 // These must be at the very top of the file. Do not edit.
 // icon-color: deep-green; icon-glyph: flag;
 /* -----------------------------------------------
-All the functions used in this widget were taken from "ig-lastest-post" 
-so all the credit goes to @supermamon also thanks
-to @supermamon, his work was my inspiration for making this script
+this script was made using functions from "ig-lastest-post" so all the credit goes to @supermamon
+also thanks to @supermamon, his work was my inspiration for making this script
 ----------------------------------------------  
 Script      : randomFlag.js
 Author      : t4rtufo
 Version     : 1.0
-Used APIs   : flagpedia.net
+APIs used   : flagpedia.net
 				 restcountries.eu
-
 Description :
   Displays a random Flag
 
@@ -20,19 +18,21 @@ Limitations:
  
 ----------------------------------------------- */
 //Language code to show contries' names
-language = "en"
+language = "es"
 // Get list of countries
 const reqNames = new Request(`https://flagcdn.com/${language}/codes.json`)
 const  names= await reqNames.loadJSON()
 
 // randomly chooses a code
 var code = ""
+var nombre = ""
 var indice =0
 nRandom=Math.floor(Math.random() * 307)
 
  for (let i in names){
 	if(nRandom==indice){
 		code=i
+		nombre=names[i]
 		break
 	}else{
 		indice +=1
@@ -45,12 +45,6 @@ console.log(code)
 // if there no name related just an
 // empty String is shown
 
-const reqName = new Request(`https://restcountries.eu/rest/v2/alpha/${code}`)
-const resName = await reqName.loadJSON()
-var nombre=""
-if(resName.name!=undefined){
-	nombre=resName.name
-}
 
 // get the flag
 const reqFlag = new Request(`https://flagcdn.com/w1280/${code}.png`)

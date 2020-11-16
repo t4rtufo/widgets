@@ -9,6 +9,9 @@ to @supermamon, his work was my inspiration for making this script
 Script      : randomFlag.js
 Author      : t4rtufo
 Version     : 1.0
+APIs used   : flagpedia.net
+				 restcountries.eu
+
 Description :
   Displays a random Flag
 

@@ -18,7 +18,7 @@ Limitations:
  
 ----------------------------------------------- */
 //Language code to show contries' names
-language = "es"
+language = "en"
 // Get list of countries
 const reqNames = new Request(`https://flagcdn.com/${language}/codes.json`)
 const  names= await reqNames.loadJSON()

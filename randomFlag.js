@@ -19,7 +19,7 @@ Description :
    example: pe,de,gr,is
 	in case of usa states the codes
 	go like this:
-		us-wv,us
+		us-wv,us-ny
    https://www.iban.com/country-codes
   
 Limitations:
@@ -36,7 +36,7 @@ Changelog:
     V1.2 Now the widget redirects
         to flagpedia when tapping
         for showing information
-        about the flag
+        about the flag and country
 ----------------------------------------------- */
 
 language = "en"
